@@ -1,5 +1,6 @@
 PROJECT:=xilinx_slow_clk_mngr
-VIVADO ?= vivado
+#VIVADO ?= vivado
+VIVADO ?= vivado-2019.1.1 vivado
 VIVADOFLAGS ?= -nojournal -mode batch -source scripts/prologue.tcl
 MODE=batch
 

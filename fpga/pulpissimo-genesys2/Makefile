@@ -1,7 +1,8 @@
 include fpga-settings.mk
 
 PROJECT:=pulpissimo-$(BOARD)
-VIVADO ?= vivado
+#VIVADO ?= vivado
+VIVADO ?= vivado-2019.1.1 vivado
 
 .DEFAULT_GOAL:=help
 

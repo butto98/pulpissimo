@@ -83,6 +83,10 @@ module soc_domain #(
 
     output logic                          uart_tx_o,
     input logic                           uart_rx_i,
+    //
+    output logic                          uart_rts_o,
+    input  logic                          uart_cts_i,
+    //
 
     input logic                           cam_clk_i,
     input logic [7:0]                     cam_data_i,
@@ -308,6 +312,10 @@ module soc_domain #(
       .gpio_cfg_o,
       .uart_tx_o,
       .uart_rx_i,
+      //
+      .uart_rts_o,
+      .uart_cts_i,
+      //
       .cam_clk_i,
       .cam_data_i,
       .cam_hsync_i,

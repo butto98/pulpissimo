@@ -110,10 +110,12 @@ set_property -dict {PACKAGE_PIN J20  IOSTANDARD LVCMOS33} [get_ports pad_pmod1_6
 set_property -dict {PACKAGE_PIN J19  IOSTANDARD LVCMOS33} [get_ports pad_pmod1_7]
 
 ## UART
-set_property -dict {PACKAGE_PIN E13 IOSTANDARD LVCMOS33} [get_ports pad_uart_rx]
-set_property -dict {PACKAGE_PIN F13 IOSTANDARD LVCMOS33} [get_ports pad_uart_tx]
+#set_property -dict {PACKAGE_PIN E13 IOSTANDARD LVCMOS33} [get_ports pad_uart_rx]
+#set_property -dict {PACKAGE_PIN F13 IOSTANDARD LVCMOS33} [get_ports pad_uart_tx]
 set_property -dict {PACKAGE_PIN D12 IOSTANDARD LVCMOS33} [get_ports pad_uart_rts]
 set_property -dict {PACKAGE_PIN E12 IOSTANDARD LVCMOS33} [get_ports pad_uart_cts]
+set_property -dict {PACKAGE_PIN AF2 IOSTANDARD LVCMOS18} [get_ports pad_uart_rx]
+set_property -dict {PACKAGE_PIN AF1 IOSTANDARD LVCMOS18} [get_ports pad_uart_tx]
 
 ## LEDs
 set_property -dict {PACKAGE_PIN AG14 IOSTANDARD LVCMOS33} [get_ports led0_o]
@@ -128,8 +130,10 @@ set_property -dict {PACKAGE_PIN AM14 IOSTANDARD LVCMOS33} [get_ports switch2_i]
 set_property -dict {PACKAGE_PIN AN13 IOSTANDARD LVCMOS33} [get_ports switch3_i]
 
 ## I2C Bus
-set_property -dict {PACKAGE_PIN J10 IOSTANDARD LVCMOS33} [get_ports pad_i2c0_scl]
-set_property -dict {PACKAGE_PIN J11 IOSTANDARD LVCMOS33} [get_ports pad_i2c0_sda]
+#set_property -dict {PACKAGE_PIN J10 IOSTANDARD LVCMOS33} [get_ports pad_i2c0_scl]
+#set_property -dict {PACKAGE_PIN J11 IOSTANDARD LVCMOS33} [get_ports pad_i2c0_sda]
+set_property -dict {PACKAGE_PIN AF3 IOSTANDARD LVCMOS18} [get_ports pad_i2c0_scl]
+set_property -dict {PACKAGE_PIN AE3 IOSTANDARD LVCMOS18} [get_ports pad_i2c0_sda]
 
 ## HDMI CTL
 set_property -dict {PACKAGE_PIN F15 IOSTANDARD LVCMOS33} [get_ports pad_hdmi_scl]

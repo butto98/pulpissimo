@@ -241,6 +241,10 @@ module pulpissimo #(
 
   logic                        s_uart_tx;
   logic                        s_uart_rx;
+  //
+  logic                        s_uart_rts;
+  logic                        s_uart_cts;
+  //
 
   logic                        s_i2c0_scl_out;
   logic                        s_i2c0_scl_in;
@@ -555,6 +559,10 @@ module pulpissimo #(
 
         .uart_tx_i                  ( s_uart_tx                   ),
         .uart_rx_o                  ( s_uart_rx                   ),
+        //
+        .uart_rts_i                 ( s_uart_rts                  ),
+        .uart_cts_o                 ( s_uart_cts                  ),
+        //
 
         .i2c_scl_out_i              ( s_i2c_scl_out               ),
         .i2c_scl_in_o               ( s_i2c_scl_in                ),
@@ -763,6 +771,10 @@ module pulpissimo #(
 
         .uart_tx_o                   ( s_uart_tx          ),
         .uart_rx_i                   ( s_uart_rx          ),
+        //
+        .uart_rts_o                  ( s_uart_rts         ),
+        .uart_cts_i                  ( s_uart_cts         ),
+        //
 
         .cam_clk_i                   ( s_cam_pclk         ),
         .cam_data_i                  ( s_cam_data         ),

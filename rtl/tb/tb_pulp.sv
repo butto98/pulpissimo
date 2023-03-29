@@ -302,6 +302,9 @@ module tb_pulp;
 
   if (CONFIG_FILE == "NONE") begin
     assign w_uart_tx = w_uart_rx;
+    //
+    assign w_i2c0_scl = w_i2c0_sda;
+    //
   end
 
 

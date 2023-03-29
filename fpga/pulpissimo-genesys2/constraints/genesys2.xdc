@@ -82,11 +82,16 @@ set_property -dict {PACKAGE_PIN AD12 IOSTANDARD LVDS} [get_ports ref_clk_p]
 
 ## Buttons
 set_property -dict {PACKAGE_PIN R19 IOSTANDARD LVCMOS33} [get_ports pad_reset_n]
-set_property -dict {PACKAGE_PIN E18 IOSTANDARD LVCMOS12} [get_ports btnc_i]
-set_property -dict {PACKAGE_PIN M19 IOSTANDARD LVCMOS12} [get_ports btnd_i]
-set_property -dict {PACKAGE_PIN M20 IOSTANDARD LVCMOS12} [get_ports btnl_i]
-set_property -dict {PACKAGE_PIN C19 IOSTANDARD LVCMOS12} [get_ports btnr_i]
-set_property -dict {PACKAGE_PIN B19 IOSTANDARD LVCMOS12} [get_ports btnu_i]
+#set_property -dict {PACKAGE_PIN E18 IOSTANDARD LVCMOS12} [get_ports btnc_i]
+#set_property -dict {PACKAGE_PIN M19 IOSTANDARD LVCMOS12} [get_ports btnd_i]
+#set_property -dict {PACKAGE_PIN M20 IOSTANDARD LVCMOS12} [get_ports btnl_i]
+#set_property -dict {PACKAGE_PIN C19 IOSTANDARD LVCMOS12} [get_ports btnr_i]
+#set_property -dict {PACKAGE_PIN B19 IOSTANDARD LVCMOS12} [get_ports btnu_i]
+set_property -dict {PACKAGE_PIN E18 IOSTANDARD LVCMOS18} [get_ports btnc_i]
+set_property -dict {PACKAGE_PIN M19 IOSTANDARD LVCMOS18} [get_ports btnd_i]
+set_property -dict {PACKAGE_PIN M20 IOSTANDARD LVCMOS18} [get_ports btnl_i]
+set_property -dict {PACKAGE_PIN C19 IOSTANDARD LVCMOS18} [get_ports btnr_i]
+set_property -dict {PACKAGE_PIN B19 IOSTANDARD LVCMOS18} [get_ports btnu_i]
 
 ## To use FTDI FT2232 JTAG
 set_property -dict {PACKAGE_PIN Y29 IOSTANDARD LVCMOS33} [get_ports pad_jtag_trst]
@@ -96,8 +101,10 @@ set_property -dict {PACKAGE_PIN W28 IOSTANDARD LVCMOS33} [get_ports pad_jtag_tdo
 set_property -dict {PACKAGE_PIN W29 IOSTANDARD LVCMOS33} [get_ports pad_jtag_tms]
 
 ## UART
-set_property -dict {PACKAGE_PIN Y23 IOSTANDARD LVCMOS33} [get_ports pad_uart_tx]
-set_property -dict {PACKAGE_PIN Y20 IOSTANDARD LVCMOS33} [get_ports pad_uart_rx]
+#set_property -dict {PACKAGE_PIN Y23 IOSTANDARD LVCMOS33} [get_ports pad_uart_tx]
+#set_property -dict {PACKAGE_PIN Y20 IOSTANDARD LVCMOS33} [get_ports pad_uart_rx]
+set_property -dict {PACKAGE_PIN H27 IOSTANDARD LVCMOS18} [get_ports pad_uart_tx]
+set_property -dict {PACKAGE_PIN H26 IOSTANDARD LVCMOS18} [get_ports pad_uart_rx]
 
 ## LEDs
 set_property -dict {PACKAGE_PIN T28 IOSTANDARD LVCMOS33} [get_ports led0_o]
@@ -110,8 +117,10 @@ set_property -dict {PACKAGE_PIN U29 IOSTANDARD LVCMOS33} [get_ports led3_o]
 #set_property -dict {PACKAGE_PIN W23 IOSTANDARD LVCMOS33} [get_ports ]
 
 ## Switches
-set_property -dict {PACKAGE_PIN G19 IOSTANDARD LVCMOS12} [get_ports switch0_i]
-set_property -dict {PACKAGE_PIN G25 IOSTANDARD LVCMOS12} [get_ports switch1_i]
+#set_property -dict {PACKAGE_PIN G19 IOSTANDARD LVCMOS12} [get_ports switch0_i]
+#set_property -dict {PACKAGE_PIN G25 IOSTANDARD LVCMOS12} [get_ports switch1_i]
+set_property -dict {PACKAGE_PIN G19 IOSTANDARD LVCMOS18} [get_ports switch0_i]
+set_property -dict {PACKAGE_PIN G25 IOSTANDARD LVCMOS18} [get_ports switch1_i]
 #set_property -dict {PACKAGE_PIN H24 IOSTANDARD LVCMOS12} [get_ports {}]
 # set_property -dict {PACKAGE_PIN K19 IOSTANDARD LVCMOS12} [get_ports {}]
 # set_property -dict {PACKAGE_PIN N19 IOSTANDARD LVCMOS12} [get_ports {}]
@@ -120,8 +129,10 @@ set_property -dict {PACKAGE_PIN G25 IOSTANDARD LVCMOS12} [get_ports switch1_i]
 # set_property -dict {PACKAGE_PIN P27 IOSTANDARD LVCMOS33} [get_ports {}]
 
 ## I2C Bus
-set_property -dict {PACKAGE_PIN AE30 IOSTANDARD LVCMOS33} [get_ports pad_i2c0_scl]
-set_property -dict {PACKAGE_PIN AF30 IOSTANDARD LVCMOS33} [get_ports pad_i2c0_sda]
+#set_property -dict {PACKAGE_PIN AE30 IOSTANDARD LVCMOS33} [get_ports pad_i2c0_scl]
+#set_property -dict {PACKAGE_PIN AF30 IOSTANDARD LVCMOS33} [get_ports pad_i2c0_sda]
+set_property -dict {PACKAGE_PIN B29 IOSTANDARD LVCMOS18} [get_ports pad_i2c0_scl]
+set_property -dict {PACKAGE_PIN C29 IOSTANDARD LVCMOS18} [get_ports pad_i2c0_sda]
 
 ## QSPI Flash
 set_property -dict {PACKAGE_PIN U19 IOSTANDARD LVCMOS33} [get_ports pad_spim_csn0]

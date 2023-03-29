@@ -45,6 +45,10 @@ module safe_domain #(
         // UART
         input  logic             uart_tx_i            ,
         output logic             uart_rx_o            ,
+        //
+        input  logic             uart_rts_i           ,
+        output logic             uart_cts_o           ,
+        //
 
         input  logic [N_I2C-1:0] i2c_scl_out_i,
         output logic [N_I2C-1:0] i2c_scl_in_o,
@@ -235,6 +239,10 @@ module safe_domain #(
 
         .uart_tx_i             ( uart_tx_i             ),
         .uart_rx_o             ( uart_rx_o             ),
+        //
+        .uart_rts_i            ( uart_rts_i            ),
+        .uart_cts_o            ( uart_cts_o            ),
+        //
 
         .i2c_scl_out_i         ( i2c_scl_out_i         ),
         .i2c_scl_in_o          ( i2c_scl_in_o          ),

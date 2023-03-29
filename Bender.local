@@ -1,0 +1,5 @@
+overrides:
+  pulp_soc: { path: "working_dir/pulp_soc" } # Temporary override by Bender using `bender clone` command
+  udma_uart: { path: "working_dir/udma_uart" } # Temporary override by Bender using `bender clone` command
+#  pulp_soc: { git: "git@github.com:butto98/pulp_soc.git", rev: pulpsoc_butt }
+#  udma_uart: { git: "git@github.com:butto98/udma_uart.git", rev: uart_ctf}
